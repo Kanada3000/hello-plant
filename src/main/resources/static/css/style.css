@@ -1,0 +1,79 @@
+html, body {
+    background-color: #a88d6a;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 10px 30px;
+    background-color: #524231;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+header h1 {
+    font-family: Cavorting, serif;
+    color: #1f9628;
+    font-size: 80px;
+    margin: 0;
+}
+
+header a, header div {
+	font-size: 30px;
+	color: #e5d6b2;
+	text-decoration: none;
+}
+
+.container-main{
+    display: flex;
+    width: 100%;
+}
+
+.menu{
+    background-color: #e5d6b2;
+    width: 25%;
+    flex-shrink: 0;
+    font-family: Jakob, serif;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.shelf {
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+    background-image: url("../img/shelf.png");
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.shelf .plant{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.shelf .plant img{
+    object-fit: scale-down;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container-shelf{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@font-face {
+    font-family: "Jakob";
+    src: url("/fonts/Jakob_DP_Normal.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Cavorting";
+    src: url("/fonts/Cavorting.otf") format("opentype");
+}
